@@ -55,8 +55,11 @@ value for the local 'url' variable.
 
 ## Problems
 
-You **cannot** set the variable XXX in your environment.  If you do,
-then the message to standard output will end up in the code! This will be the message when you try to run the code:
+You **cannot** set the variable `TIMBRE_NS_BLACKLIST` in your login
+profile or your environment.  If you do, then the message to standard
+output will end up in the code!
+
+This will be the message when you try to run the code:
 
 ```
 $ node entrypoint.js 
@@ -65,6 +68,18 @@ Compile-time (elision) Timbre ns blacklist: ["kvlt.*"]
                        ^^^^^^
 SyntaxError: Unexpected identifier
 ```
+
+or
+
+```
+/Users/loomis/Documents/code/loomis/node-cljs-test/out/taoensso/timbre.js:2
+Compile-time (elision) Timbre ns blacklist: ["kvlt.*"]
+                       ^^^^^^
+SyntaxError: Unexpected identifier                       
+```
+
+If you make this mistake, you'll need to do a `lein clean` to get a
+complete rebuild of the javascript files.
 
 ## Legal
 

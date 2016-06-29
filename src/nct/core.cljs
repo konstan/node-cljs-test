@@ -13,7 +13,7 @@
 
 (defn -main [& args]
   (go
-   (let [url "https://nuv.la/"
+   (let [url "https://google.com/"
          {:keys [status]} (<! (kvlt.chan/request! {:url url}))]
          (println "STATUS: " status)))
   (println "Hello world main!"))
