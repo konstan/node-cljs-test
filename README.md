@@ -1,6 +1,10 @@
 # node-cljs-test
 
-http://www.mase.io/code/clojure/node/2015/01/24/getting-started-with-clojurecript-and-node/
+The results in this repository were created following the [Getting
+Started with ClojureScript and Node
+blog](http://www.mase.io/code/clojure/node/2015/01/24/getting-started-with-clojurecript-and-node/).
+Corrections were made to the process to make everything work with the
+latest versions of dependencies.
 
 ## Building
 
