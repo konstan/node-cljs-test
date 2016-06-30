@@ -43,6 +43,7 @@ installed into the root of the repository.
 $ npm install websocket
 $ npm install eventsource
 $ npm install xhr2
+$ npm install request
 ```
 
 When this is complete, you can run the application with:

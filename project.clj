@@ -3,7 +3,9 @@
   :url "https://github.com/loomis/node-cljs-test.git"
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.89"]
-                 [io.nervous/kvlt "0.1.1"]
+                 [org.clojure/tools.cli "0.3.5"]
+                 [io.nervous/kvlt "0.1.3-SNAPSHOT"]
+                 [com.taoensso/timbre "4.5.0"]
                  [org.clojure/core.async "0.2.385"]]
   :jvm-opts ^:replace ["-Xmx1g" "-server"]
   :plugins [[lein-npm "0.6.1"]
